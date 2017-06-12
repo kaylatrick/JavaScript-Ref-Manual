@@ -33,24 +33,22 @@ Expression: anything that resolves in a value (ex: var y = 1 + 2;)
 variable references a String or another data type, while a value is that piece of data in memory
 ex: var x = 4; (x is the variable, while 4 is the expression)
 
-##if-else
-
-
-##while
-##for
-##for-in
-##functions
-##local vs. global variables
-##arrays
-##objects
-##methods
-##the different uses of . [] {} ;
-##object links
-##anonymous functions
-##nested function scope / closures
-##exceptions
-##try-catch
-##the global namespace
-##important functions and objects in the global namespace
-##DOM methods and properties
-##event handlers
+##if-else //T
+##while //L
+##for //K
+##for-in //T
+##functions //L
+##local vs. global variables //K
+##arrays //T
+##objects //L
+##methods //K
+##the different uses of . [] {} ; //K
+##object links //T
+##anonymous functions //L
+##nested function scope / closures //K
+##exceptions //T
+##try-catch //L
+##the global namespace //K
+##important functions and objects in the global namespace //T
+##DOM methods and properties //L
+##event handlers //K
