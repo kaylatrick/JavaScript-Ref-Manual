@@ -36,13 +36,76 @@ ex: var x = 4; (x is the variable, while 4 is the expression)
 ##if-else //T
 ##while //L
 ##for //K
+a statement in javascript that loops through a set number of times; made up of 3 statements:
+   1) pre-statement, which defines a variable,
+   2) statement, which is the condition for the loop to run, and
+   3) post-statement, which denotes how the pre-statement is changing each time you loop through (i++, i--)
+Ex:
+for(var i = 0; i < array.length; i++) {
+  array[i] = i+1;
+}
+
 ##for-in //T
 ##functions //L
 ##local vs. global variables //K
+local variables
+  - variables only valid inside of a function
+  - cannot be accessed outside of the function
+
+  Ex: the below variable "y" cannot be access outside of the below function
+    function orange(x,y) {
+    var z = x+y;
+    }
+
+    console.log(z);   // not valid!!
+
+global variables
+  - variables that can be accessed anywhere in the javascript code
+
+  Ex: The below results in a value of 9.
+  var x = 2;
+  function yellow(y) {
+    return x^2 + y;
+  }
+  console.log(yellow(5));
+
 ##arrays //T
 ##objects //L
 ##methods //K
-##the different uses of . [] {} ; //K
+functions stored as object properties
+
+Ex: the below returns '3, 7, Object{lucas: function()}'
+function apple(x, y) {
+		console.log(x, y, this);
+	}
+var obj = {
+		lucas: apple
+	};
+obj.lucas(3,7);
+
+##the different uses of . [] {} ;
+  .
+  - accessing/calling methods
+  - accessing/assigning properties of objects
+
+  []
+  - creating an array (var a = [1,2])
+  - access/assign to indexes of arrays (a[0] = 4;)
+  - acess/assign to key of object (O["I'm a key"] = 4;)
+
+  {}
+  - body of function/loops/if elsecompound statementcreating an object ( {foo: 3; 'hi there': 9})
+
+  ;
+  - end of statement without a body
+  - separation between condition and pre-condition (for(var i = 0; i < 6; i++))
+
+  ()
+  - surrounds conditions
+  - overriding order of operations
+  - calling a function/methods (surrounds args)
+  - surrounding parameters
+
 ##object links //T
 ##anonymous functions //L
 ##nested function scope / closures //K
