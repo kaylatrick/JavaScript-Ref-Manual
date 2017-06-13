@@ -109,9 +109,35 @@ obj.lucas(3,7);
 ##object links //T
 ##anonymous functions //L
 ##nested function scope / closures //K
+Nested function scope
+  - when a function is nested within another function, it can only be called by the function containing it and can not be called elsewhere
+  - in the example below, the nested function is contained in the variable 'bar' and is called at the end of the foo() function
+
+closures
+  - makes it possible to access the scope of the parent function
+  - in the example below, 'x++' is able to access x in its parent function
+
+Ex:
+function foo(x) {
+  var y = x + 2;
+  var bar = function () {
+    x++;
+    console.log(x,y);
+  };
+  return bar;
+  }
+var a = foo(3);
+var b = foo(7);
+
+a(); // 4 5
+b(); // 8 9
+a(); // 5 5
+
 ##exceptions //T
 ##try-catch //L
 ##the global namespace //K
+
+
 ##important functions and objects in the global namespace //T
 ##DOM methods and properties //L
 ##event handlers //K
