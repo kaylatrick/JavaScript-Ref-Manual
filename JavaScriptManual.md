@@ -23,7 +23,7 @@ Operation: process of using operators and operands (in 5+3, '5+3' is the operati
 variable: reference to a piece of data in memory (ex: var x = 4;)
 
 ##reserved words
-select words in the language that have a specific meaning (ex: for, where, function)
+select words in the language that have a specific meaning (ex: for, where, function).  These words cannot be used for variable names.
 
 ##statements vs. expressions
 Statement: describes a complete action, whether it returns a value or not (ex: if(true) {console.log("hi")};)
@@ -31,7 +31,7 @@ Expression: anything that resolves in a value (ex: var y = 1 + 2;)
 
 ##variables vs. values
 variable references a String or another data type, while a value is that piece of data in memory
-ex: var x = 4; (x is the variable, while 4 is the expression)
+ex: var x = 4; (x is the variable, while 4 is the value)
 
 ##if-else //T
 ##while //L
@@ -47,6 +47,18 @@ for(var i = 0; i < array.length; i++) {
 
 ##for-in //T
 ##functions //L
+  A function is a called operation that may or may not accept input values and may or may not return a value.
+  Example:
+  function addition(x,y){
+    return x+y
+  }
+  addition(6,2) returns 8
+  function declaration(){
+    console.log("I love ice cream!")
+  }
+
+  declaration() prints "I love ice cream!" to the console.
+
 ##local vs. global variables //K
 local variables
   - variables only valid inside of a function
@@ -71,6 +83,10 @@ global variables
 
 ##arrays //T
 ##objects //L
+An object is similar to an array but its elements are referenced through key/value pairs and not indices.  
+Example:
+var o = {this:2,that:"hey",thing:"yo"}
+(o.this == 2) evaluates to true as well as (o.that == "hey").
 ##methods //K
 functions stored as object properties
 
