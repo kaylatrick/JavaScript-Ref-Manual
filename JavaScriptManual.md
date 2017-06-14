@@ -95,6 +95,7 @@ An object is similar to an array but its elements are referenced through key/val
 Example:
 var o = {this:2,that:"hey",thing:"yo"}
 (o.this == 2) evaluates to true as well as (o.that == "hey").
+
 ##methods //K
 functions stored as object properties
 
@@ -160,8 +161,19 @@ a(); // 5 5
 ##exceptions //T
 ##try-catch //L
 ##the global namespace //K
+Javascript objects/variables that can be accessed anywhere else in the code; need to be careful when using global variables as it can be hard to keep track of its transformations throughout the code
 
+Ex:
+var x = 4;
+
+function blue(y) {
+  x = x * y;
+}
+
+blue(5);
+console.log(x) //20
 
 ##important functions and objects in the global namespace //T
 ##DOM methods and properties //L
+
 ##event handlers //K
