@@ -157,11 +157,9 @@ Javascript objects/variables that can be accessed anywhere else in the code; nee
 
 Ex:
 var x = 4;
-
 function blue(y) {
   x = x * y;
 }
-
 blue(5);
 console.log(x) //20
 
