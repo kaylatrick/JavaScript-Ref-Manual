@@ -38,6 +38,17 @@ If / else statements are conditional statements. Under different conditions, the
   1) IF Statement say if the condition evaluate to "True" then execute to the next statement or otherwise skip the next statement and go on from there.
   2) Else Statement says if the condition evaluate to "False"
 ##while //L
+A While Loop is a loop that continues to perform "while" the condition is true.
+Example:
+The following loop will run ininitely because the condition is always true:
+while(true){
+  console.log("Stuff");
+}
+This loop will run 10 times:
+var a = 0;
+while(a<10){
+  a++;
+}
 ##for //K
 a statement in javascript that loops through a set number of times; made up of 3 statements:
    1) pre-statement, which defines a variable,
@@ -133,6 +144,16 @@ obj.lucas(3,7);
 
 ##object links //T
 ##anonymous functions //L
+These functions are declared at runtime and are not given names in the same way as normal functions.
+Example:
+This is a normal function:
+function hello(){
+  console.log("hello");
+}
+To do the same function anonymously:
+var hello = function(){
+  console.log("hello");
+}
 ##nested function scope / closures //K
 Nested function scope
   - when a function is nested within another function, it can only be called by the function containing it and can not be called elsewhere
@@ -160,6 +181,27 @@ a(); // 5 5
 
 ##exceptions //T
 ##try-catch //L
+The try-catch executes the code within the "try" block and tests it for errors.  If there is an error then the error is handled by the "catch" block.  It is possible to have multiple "catch" blocks.
+Example:
+
+var ajaxrequest=null
+if (window.ActiveXObject){ //Test for support for different versions of ActiveXObject in IE
+    try {
+        ajaxrequest=new ActiveXObject("Msxml2.XMLHTTP")
+    }
+    catch (e){
+        try{
+        ajaxrequest=new ActiveXObject("Microsoft.XMLHTTP")
+        } //end inner try
+        catch (e){
+            alert("I give up. Your IE doesn't support Ajax!")
+        } //end inner catch
+    } //end outer catch
+}
+else if (window.XMLHttpRequest) // if Mozilla, Safari etc
+    ajaxrequest=new XMLHttpRequest()
+ajaxrequest.open('GET', 'process.php', true) //do something with request
+
 ##the global namespace //K
 Javascript objects/variables that can be accessed anywhere else in the code; need to be careful when using global variables as it can be hard to keep track of its transformations throughout the code
 
