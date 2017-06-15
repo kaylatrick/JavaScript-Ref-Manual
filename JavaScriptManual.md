@@ -217,3 +217,21 @@ console.log(x) //20
 ##DOM methods and properties //L
 
 ##event handlers //K
+methods that are executed when a particular event occurs
+
+Example:
+<html><body>
+<ol id="foo">
+  <li>Apple</li>
+  <li>Orange</li>
+  <li>Banana</li>
+  <li>Kiwi</li>
+</ol>
+</body></html>
+
+<script>
+Function hello(evt) {
+  Console.log('yo'); }
+var foo = document.getElementById('foo');
+foo.addEventListener('click', hello); //when you click on any part of the above list
+</script>
