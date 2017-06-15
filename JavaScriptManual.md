@@ -37,6 +37,17 @@ ex: var x = 4; (x is the variable, while 4 is the value)
 If / else statements are conditional statements. Under different conditions, the computer will output different things.
   1) IF Statement say if the condition evaluate to "True" then execute to the next statement or otherwise skip the next statement and go on from there.
   2) Else Statement says if the condition evaluate to "False"
+  Example:
+  var stopnumber = 5;
+  for (var i = 1; i < 11; i++)  {
+    if (i === stopnumber)   {
+      console.log("The loop stops here!<br>");
+      break;
+    } else {
+      console.log(i + "I am part of a loop!<br>");
+    }
+}
+
 ##while //L
 A While Loop is a loop that continues to perform "while" the condition is true.
 Example:
@@ -60,6 +71,25 @@ for(var i = 0; i < array.length; i++) {
 }
 
 ##for-in //T
+A for-in loop allows you to iterates over the properties of an object.
+
+Example:
+var obj = {amber: 2, brandy: 9, todd: 5};
+var arr = [];
+for (var k in obj) {
+    arr[arr.length] = k;
+}
+var a = arr;  
+
+A for-in loop allows you to iterates over the indexes of an array.
+Example:
+var x = [10, 20, 30, 40, 50];
+var y = [];
+// copy every element of 'x' to 'y'
+for (var i in arr) {
+    y[i] = x[i];         // 'i' is the index, not the value!
+}
+
 ##functions //L
   A function is a called operation that may or may not accept input values and may or may not return a value.
   Example:
@@ -143,6 +173,12 @@ obj.lucas(3,7);
   - surrounding parameters
 
 ##object links //T
+An object link can be perform when you set a global namespace s called Object which has a method create. The create method takes an object and returns a new object that is linked to the first:
+
+Example:
+var x = {};
+var y = Object.create(x);     Note....return an object linked to the object referenced by 'x'
+
 ##anonymous functions //L
 These functions are declared at runtime and are not given names in the same way as normal functions.
 Example:
@@ -180,6 +216,15 @@ b(); // 8 9
 a(); // 5 5
 
 ##exceptions //T
+Exceptions are consider errors that occur in Javascript where an error message gets generated
+based on coding errors made by the developer, wrong input or other things.
+
+Example:
+"Uncaught SyntaxError: Unexpected token )"
+var a = ()
+for (var i=0; i<0; i++)
+a(i)
+
 ##try-catch //L
 The try-catch executes the code within the "try" block and tests it for errors.  If there is an error then the error is handled by the "catch" block.  It is possible to have multiple "catch" blocks.
 Example:
