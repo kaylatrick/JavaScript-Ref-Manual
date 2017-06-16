@@ -37,6 +37,7 @@ ex: var x = 4; (x is the variable, while 4 is the value)
 If / else statements are conditional statements. Under different conditions, the computer will output different things.
   1) IF Statement say if the condition evaluate to "True" then execute to the next statement or otherwise skip the next statement and go on from there.
   2) Else Statement says if the condition evaluate to "False"
+
 ## while //L
 A While Loop is a loop that continues to perform "while" the condition is true.
 Example:
@@ -49,6 +50,7 @@ var a = 0;
 while(a<10){
   a++;
 }
+
 ## for //K
 a statement in javascript that loops through a set number of times; made up of 3 statements:
    1) pre-statement, which defines a variable,
@@ -154,6 +156,7 @@ To do the same function anonymously:
 var hello = function(){
   console.log("hello");
 }
+
 ## nested function scope / closures //K
 Nested function scope
   - when a function is nested within another function, it can only be called by the function containing it and can not be called elsewhere
