@@ -217,5 +217,8 @@ console.log(x) //20
 
 ##important functions and objects in the global namespace //T
 ##DOM methods and properties //L
-
+DOM methods allow you to dynamically edit/change the HTML through Javascript.  The DOM properties are the values of the HTML elements that you can set or change.
+Example:
+document.getElementById("foo").innerHTML = "bar";
+In this example "getElementById" is a DOM method and "innerHTML" is a property.
 ##event handlers //K
