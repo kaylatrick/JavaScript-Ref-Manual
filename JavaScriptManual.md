@@ -259,6 +259,11 @@ blue(5);
 console.log(x) //20
 
 ##important functions and objects in the global namespace //T
+the object upon which all other objects are built:
+function
+error
+Object
+Math
 ##DOM methods and properties //L
 
 ##event handlers //K
