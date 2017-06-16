@@ -1,6 +1,6 @@
-#Javascript Manual
+# Javascript Manual
 
-##values, data types
+## values, data types
 Data types:
 - Primitive: String, number, boolean, null, undefined
 - Object
@@ -14,26 +14,26 @@ Value:
 - undefined: not assigned a value
 - Object: series of key-value pairs (ex {foo: 4})
 
-##operations / operators / operands
+## operations / operators / operands
 Operators: plus, minus, multiply, divide (in 5+3, '+' is the operator)
 Operand: values being acted upon by an operator (in 5+3, 5 and 3 are the operands)
 Operation: process of using operators and operands (in 5+3, '5+3' is the operation)
 
-##variables, var
+## variables, var
 variable: reference to a piece of data in memory (ex: var x = 4;)
 
-##reserved words
+## reserved words
 select words in the language that have a specific meaning (ex: for, where, function).  These words cannot be used for variable names.
 
-##statements vs. expressions
+## statements vs. expressions
 Statement: describes a complete action, whether it returns a value or not (ex: if(true) {console.log("hi")};)
 Expression: anything that resolves in a value (ex: var y = 1 + 2;)
 
-##variables vs. values
+## variables vs. values
 variable references a String or another data type, while a value is that piece of data in memory
 ex: var x = 4; (x is the variable, while 4 is the value)
 
-##if-else //T
+## if-else //T
 If / else statements are conditional statements. Under different conditions, the computer will output different things.
   1) IF Statement say if the condition evaluate to "True" then execute to the next statement or otherwise skip the next statement and go on from there.
   2) Else Statement says if the condition evaluate to "False"
@@ -60,7 +60,8 @@ var a = 0;
 while(a<10){
   a++;
 }
-##for //K
+
+## for //K
 a statement in javascript that loops through a set number of times; made up of 3 statements:
    1) pre-statement, which defines a variable,
    2) statement, which is the condition for the loop to run, and
@@ -103,7 +104,7 @@ for (var i in arr) {
 
   declaration() prints "I love ice cream!" to the console.
 
-##local vs. global variables //K
+## local vs. global variables //K
 local variables
   - variables only valid inside of a function
   - cannot be accessed outside of the function
@@ -125,19 +126,19 @@ global variables
   }
   console.log(yellow(5));
 
-##arrays //T
+## arrays //T
 An array is a container that store lists of data that can be made up of different data types that holds a fixed number of values of a single type.
 1) var names = ["Bob", "Nancy", "Fred"];
 2) var sizes = [1,2,4,8,9];
 3) var mixed = [3,"Billy","blue", "candy"];
 
-##objects //L
+## objects //L
 An object is similar to an array but its elements are referenced through key/value pairs and not indices.  
 Example:
 var o = {this:2,that:"hey",thing:"yo"}
 (o.this == 2) evaluates to true as well as (o.that == "hey").
 
-##methods //K
+## methods //K
 functions stored as object properties
 
 Ex: the below returns '3, 7, Object{lucas: function()}'
@@ -149,7 +150,7 @@ var obj = {
 	};
 obj.lucas(3,7);
 
-##the different uses of . [] {} ;
+## the different uses of . [] {} ;
   .
   - accessing/calling methods
   - accessing/assigning properties of objects
@@ -190,7 +191,8 @@ To do the same function anonymously:
 var hello = function(){
   console.log("hello");
 }
-##nested function scope / closures //K
+
+## nested function scope / closures //K
 Nested function scope
   - when a function is nested within another function, it can only be called by the function containing it and can not be called elsewhere
   - in the example below, the nested function is contained in the variable 'bar' and is called at the end of the foo() function
@@ -247,7 +249,7 @@ else if (window.XMLHttpRequest) // if Mozilla, Safari etc
     ajaxrequest=new XMLHttpRequest()
 ajaxrequest.open('GET', 'process.php', true) //do something with request
 
-##the global namespace //K
+## the global namespace //K
 Javascript objects/variables that can be accessed anywhere else in the code; need to be careful when using global variables as it can be hard to keep track of its transformations throughout the code
 
 Ex:
@@ -266,10 +268,10 @@ Object
 Math
 ##DOM methods and properties //L
 
-##event handlers //K
+## event handlers //K
 methods that are executed when a particular event occurs
 
-Example:
+Example: (the below list has id="foo")
 <html><body>
 <ol id="foo">
   <li>Apple</li>
