@@ -222,7 +222,7 @@ console.log(x) //20
 ## event handlers //K
 methods that are executed when a particular event occurs
 
-Example:
+Example: (the below list has id="foo")
 <html><body>
 <ol id="foo">
   <li>Apple</li>
